@@ -1,8 +1,3 @@
-/*
-ID: 00100000
-LANG: JAVA
-TASK: speeding
-*/
 import java.util.*;
 import java.io.*;
 

@@ -1,8 +1,3 @@
-/*
-ID: 00100000
-LANG: JAVA
-TASK: cowsignal
-*/
 import java.util.*;
 import java.io.*;
 
