@@ -1,7 +1,7 @@
 import java.util.*;
 import java.io.*;
 
-public class stalling {
+public class prob3_bronze_jan21 {
     public static void main (String[]args) throws IOException {
         BufferedReader r = new BufferedReader(new InputStreamReader(System.in));
         StringTokenizer t = new StringTokenizer(r.readLine());
