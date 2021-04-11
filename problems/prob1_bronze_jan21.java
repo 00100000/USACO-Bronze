@@ -1,6 +1,8 @@
-import java.io.*;
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.io.IOException;
 
-public class UdderedButNotHerd {
+public class prob1_bronze_jan21 {
     public static void main (String[]args) throws IOException {
         BufferedReader r = new BufferedReader(new InputStreamReader(System.in));
 
