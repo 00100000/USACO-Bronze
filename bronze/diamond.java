@@ -26,9 +26,7 @@ class diamond {
 			// a single diamond means a sequence of displayed diamonds must
 			// always contain at least one diamond
 			int count = 1;
-			for (int j = i + 1; j < n; j++) {
-				if (Math.abs(diamonds[i] - diamonds[j]) <= k) count++;
-			}
+			for (int j = i + 1; j < n; j++) if (Math.abs(diamonds[i] - diamonds[j]) <= k) count++;
 			if (count > max) max = count;
 		}
 

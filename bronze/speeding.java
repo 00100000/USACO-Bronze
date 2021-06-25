@@ -1,10 +1,10 @@
-import java.util.StringTokenizer;
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.FileReader;
 import java.io.FileWriter;
-import java.io.PrintWriter;
 import java.io.IOException;
+import java.io.PrintWriter;
+import java.util.StringTokenizer;
 
 class speeding {
 	public static void main(String[] args) throws IOException {
@@ -43,9 +43,7 @@ class speeding {
 		}
 		// check all values in each array to find worst infraction
 		for (int i = 0; i < 100; i++) {
-			if (mArr[i] - nArr[i] > worstInfraction) {
-				worstInfraction = mArr[i] - nArr[i];
-			}
+			if (mArr[i] - nArr[i] > worstInfraction) worstInfraction = mArr[i] - nArr[i];
 		}
 		pw.println(worstInfraction);
 		pw.close();

@@ -21,9 +21,7 @@ class pails {
 		for (int i = 0; i*y <= m; i++) {
 			total += i*y;
 			// fill rest of total with x
-			while (total + x <= m) {
-				total += x;
-			}
+			while (total + x <= m) total += x;
 			if (total > maxTotal) maxTotal = total;
 			total = 0;
 		}

@@ -1,6 +1,6 @@
 import java.io.BufferedReader;
-import java.io.InputStreamReader;
 import java.io.IOException;
+import java.io.InputStreamReader;
 
 class prob1_bronze_jan21 {
 	public static void main(String[] args) throws IOException {
@@ -24,9 +24,7 @@ class prob1_bronze_jan21 {
 		// check for all values of position where the next letter is
 		// in a lower position than the current letter
 		for (int i = 0; i < positions.length - 1; i++) {
-			if (positions[i] >= positions[i + 1]) {
-				timesHummed++;
-			}
+			if (positions[i] >= positions[i + 1]) timesHummed++;
 		}
 
 		System.out.println(timesHummed);

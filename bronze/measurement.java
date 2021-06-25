@@ -39,7 +39,6 @@ class measurement {
 				}
 			}
 		}
-		// simulate scenario
 		// display is always Bessie Elsie Mildred at the start
 		String display = "BEM";
 		for (int i = 0; i < n; i++) {
@@ -52,19 +51,12 @@ class measurement {
 			} else if (log[i][1] == 2) {
 				m += log[i][2];
 			}
-			// update display
-			if (b >= e && b >= m) {
-				newDisplay += "B";
-			}
-			if (m >= b && m >= e) {
-				newDisplay += "E";
-			}
-			if (e >= b && e >= m) {
-				newDisplay += "M";
-			}
 
-			if (!display.equals(newDisplay))
-				changes++;
+			if (b >= e && b >= m) newDisplay += "B";
+			if (m >= b && m >= e) newDisplay += "E";
+			if (e >= b && e >= m) newDisplay += "M";
+
+			if (!display.equals(newDisplay)) changes++;
 			display = newDisplay;
 		}
 

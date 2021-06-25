@@ -1,11 +1,11 @@
-import java.util.ArrayList;
-import java.util.StringTokenizer;
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.FileReader;
 import java.io.FileWriter;
-import java.io.PrintWriter;
 import java.io.IOException;
+import java.io.PrintWriter;
+import java.util.ArrayList;
+import java.util.StringTokenizer;
 
 class gymnastics {
 	public static void main(String[] args) throws IOException {
@@ -43,7 +43,7 @@ class gymnastics {
 					}
 					if (row[l] == pairs.get(j)[1]) {
 						pairs.remove(j);
-						// decrease j so it doesn't skid a pair after removing
+						// decrease j so it doesn't skip a pair after removing
 						j--;
 						break;
 					}
