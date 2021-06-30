@@ -21,10 +21,10 @@ class shell {
 			int temp = pebbles[a];
 			pebbles[a] = pebbles[b];
 			pebbles[b] = temp;
-
+			// track how many times each cup was picked
 			picked[pebbles[g]]++;
 		}
-
+		// the most picked cup = highest possible score
 		int max = 0;
 		for (int i = 0; i < 3; i++) {
 			if (picked[i] > max) max = picked[i];
