@@ -1,4 +1,5 @@
 import java.io.BufferedReader;
+import java.io.BufferedWriter;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -8,7 +9,7 @@ import java.util.StringTokenizer;
 class measurement {
 	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new FileReader("measurement.in"));
-		PrintWriter pw = new PrintWriter(new FileWriter("measurement.out"));
+		PrintWriter pw = new PrintWriter(new BufferedWriter(new FileWriter("measurement.out")));
 
 		int n = Integer.parseInt(br.readLine());
 		int[][] log = new int[n][3];

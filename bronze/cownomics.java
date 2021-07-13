@@ -1,4 +1,5 @@
 import java.io.BufferedReader;
+import java.io.BufferedWriter;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -8,7 +9,7 @@ import java.util.StringTokenizer;
 class cownomics {
 	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new FileReader("cownomics.in"));
-		PrintWriter pw = new PrintWriter(new FileWriter("cownomics.out"));
+		PrintWriter pw = new PrintWriter(new BufferedWriter(new FileWriter("cownomics.out")));
 		StringTokenizer st = new StringTokenizer(br.readLine());
 
 		int n = Integer.parseInt(st.nextToken());
@@ -17,7 +18,7 @@ class cownomics {
 
 		char[][] spotty = new char[n][m];
 		char[][] plain = new char[n][m];
-		
+
 		for (int i = 0; i < n; i++) spotty[i] = br.readLine().toCharArray();
 		for (int i = 0; i < n; i++) plain[i] = br.readLine().toCharArray();
 		// compare each gene in spotty cows to all the genes in the plain cows
@@ -30,7 +31,7 @@ class cownomics {
 			}
 			if (isPossibleGene) possible++;
 		}
-		
+
 		pw.println(possible);
 		br.close();
 		pw.close();

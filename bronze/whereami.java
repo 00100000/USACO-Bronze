@@ -1,4 +1,5 @@
 import java.io.BufferedReader;
+import java.io.BufferedWriter;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -7,7 +8,7 @@ import java.io.PrintWriter;
 class whereami {
 	public static void main(String[]args) throws IOException {
 		BufferedReader br = new BufferedReader(new FileReader("whereami.in"));
-		PrintWriter pw = new PrintWriter(new FileWriter("whereami.out"));
+		PrintWriter pw = new PrintWriter(new BufferedWriter(new FileWriter("whereami.out")));
 
 		int n = Integer.parseInt(br.readLine());
 		String mailboxes = br.readLine();
