@@ -1,5 +1,4 @@
 import java.io.BufferedReader;
-import java.io.BufferedWriter;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -11,7 +10,7 @@ class gymnastics {
 	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new FileReader("gymnastics.in"));
 		StringTokenizer st = new StringTokenizer(br.readLine());
-		PrintWriter pw = new PrintWriter(new BufferedWriter(new FileWriter("gymnastics.out")));
+		PrintWriter pw = new PrintWriter(new FileWriter("gymnastics.out"));
 
 		ArrayList<int[]> pairs = new ArrayList<int[]>();
 

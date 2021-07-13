@@ -30,6 +30,7 @@ class cowsignal {
 			// reset
 			expandedLine = "";
 		}
+
 		br.close();
 		pw.close();
 	}
