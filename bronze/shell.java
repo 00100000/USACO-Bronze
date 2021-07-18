@@ -1,4 +1,5 @@
 import java.io.BufferedReader;
+import java.io.BufferedWriter;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -8,7 +9,7 @@ import java.util.StringTokenizer;
 class shell {
 	public static void main(String[]args) throws IOException {
 		BufferedReader br = new BufferedReader(new FileReader("shell.in"));
-		PrintWriter pw = new PrintWriter(new FileWriter("shell.out"));
+		PrintWriter pw = new PrintWriter(new BufferedWriter(new FileWriter("shell.out")));
 
 		int n = Integer.parseInt(br.readLine());
 

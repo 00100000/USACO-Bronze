@@ -1,4 +1,5 @@
 import java.io.BufferedReader;
+import java.io.BufferedWriter;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -9,7 +10,7 @@ class speeding {
 	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new FileReader("speeding.in"));
 		StringTokenizer st = new StringTokenizer(br.readLine());
-		PrintWriter pw = new PrintWriter(new FileWriter("speeding.out"));
+		PrintWriter pw = new PrintWriter(new BufferedWriter(new FileWriter("speeding.out")));
 
 		int worstInfraction = 0;
 

@@ -1,4 +1,5 @@
 import java.io.BufferedReader;
+import java.io.BufferedWriter;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -8,7 +9,7 @@ import java.util.StringTokenizer;
 class cowqueue {
 	public static void main(String[]args) throws IOException {
 		BufferedReader br = new BufferedReader(new FileReader("cowqueue.in"));
-		PrintWriter pw = new PrintWriter(new FileWriter("cowqueue.out"));
+		PrintWriter pw = new PrintWriter(new BufferedWriter(new FileWriter("cowqueue.out")));
 
 		int n = Integer.parseInt(br.readLine());
 		int[][] queue = new int[n][2];

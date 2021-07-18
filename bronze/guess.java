@@ -1,4 +1,5 @@
 import java.io.BufferedReader;
+import java.io.BufferedWriter;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -10,7 +11,7 @@ class guess {
 	@SuppressWarnings("unchecked")
 	public static void main(String[]args) throws IOException {
 		BufferedReader br = new BufferedReader(new FileReader("guess.in"));
-		PrintWriter pw = new PrintWriter(new FileWriter("guess.out"));
+		PrintWriter pw = new PrintWriter(new BufferedWriter(new FileWriter("guess.out")));
 
 		int n = Integer.parseInt(br.readLine());
 		ArrayList<String>[] animals = new ArrayList[n];

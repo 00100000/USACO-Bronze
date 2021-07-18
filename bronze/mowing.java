@@ -1,4 +1,5 @@
 import java.io.BufferedReader;
+import java.io.BufferedWriter;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -9,7 +10,7 @@ import java.util.StringTokenizer;
 class mowing {
 	public static void main(String[]args) throws IOException {
 		BufferedReader br = new BufferedReader(new FileReader("mowing.in"));
-		PrintWriter pw = new PrintWriter(new FileWriter("mowing.out"));
+		PrintWriter pw = new PrintWriter(new BufferedWriter(new FileWriter("mowing.out")));
 
 		int n = Integer.parseInt(br.readLine());
 		int min = Integer.MAX_VALUE;
