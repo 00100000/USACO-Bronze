@@ -1,4 +1,5 @@
 import java.io.BufferedReader;
+import java.io.BufferedWriter;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -10,7 +11,7 @@ class blocks {
 
 	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new FileReader("blocks.in"));
-		PrintWriter pw = new PrintWriter(new FileWriter("blocks.out"));
+		PrintWriter pw = new PrintWriter(new BufferedWriter(new FileWriter("blocks.out")));
 		StringTokenizer st = new StringTokenizer(br.readLine());
 
 		int n = Integer.parseInt(st.nextToken());

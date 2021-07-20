@@ -14,19 +14,21 @@ class cownomics {
 
 		int n = Integer.parseInt(st.nextToken());
 		int m = Integer.parseInt(st.nextToken());
-		int possible = 0;
 
-		char[][] spotty = new char[n][m];
-		char[][] plain = new char[n][m];
+		String[] spotty = new String[n], plain = new String[n];
 
-		for (int i = 0; i < n; i++) spotty[i] = br.readLine().toCharArray();
-		for (int i = 0; i < n; i++) plain[i] = br.readLine().toCharArray();
+		for (int i = 0; i < n; i++) spotty[i] = br.readLine();
+		for (int i = 0; i < n; i++) plain[i] = br.readLine();
 		// compare each gene in spotty cows to all the genes in the plain cows
+		int possible = 0;
 		for (int i = 0; i < m; i++) {
 			boolean isPossibleGene = true;
 			for (int j = 0; j < n; j++) {
 				for (int k = 0; k < n; k++) {
-					if (spotty[j][i] == plain[k][i]) isPossibleGene = false;
+					if (spotty[j].charAt(j) == plain[k].charAt(i)) {
+						isPossibleGene = false;
+						break;
+					}
 				}
 			}
 			if (isPossibleGene) possible++;
