@@ -15,7 +15,7 @@ class breedflip {
 		String b = br.readLine();
 
 		int flips = 0;
-		boolean lastOpposite = true;
+		boolean lastOpposite = false;
 		boolean thisOpposite = false;
 		// find every sequence of cows that need to be flipped by looking for the break point
 		// between sequences of correct cows and incorrect cows
