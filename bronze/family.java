@@ -42,8 +42,10 @@ class family {
 		int gens = gensAway(a, b);
 		if (gens > 0) {
 			pw.print(a + " is the ");
-			for (int i = 3; i < gens; i++) {
-				pw.print("great-");
+			if (gens > 3) {
+				for (int i = 2; i < gens; i++) {
+					pw.print("great-");
+				}
 			}
 			pw.print((gens >= 2 ? "grand-" : "") + "mother of " + b);
 			br.close();
