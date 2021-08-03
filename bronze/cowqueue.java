@@ -4,35 +4,37 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.Arrays;
+import java.util.Comparator;
 import java.util.StringTokenizer;
 
 class cowqueue {
+	static class Cow {
+		int a, b;
+	}
 	public static void main(String[]args) throws IOException {
 		BufferedReader br = new BufferedReader(new FileReader("cowqueue.in"));
 		PrintWriter pw = new PrintWriter(new BufferedWriter(new FileWriter("cowqueue.out")));
 
 		int n = Integer.parseInt(br.readLine());
-		int[][] queue = new int[n][2];
+		Cow[] queue = new Cow[n];
 
 		for (int i = 0; i < n; i++) {
 			StringTokenizer st = new StringTokenizer(br.readLine());
-			queue[i][0] = Integer.parseInt(st.nextToken());
-			queue[i][1] = Integer.parseInt(st.nextToken());
+			queue[i] = new Cow();
+			queue[i].a = Integer.parseInt(st.nextToken());
+			queue[i].b = Integer.parseInt(st.nextToken());
 		}
-		// bubble sort lol
-		for (int i = 0; i < n; i++) {
-			for (int j = 0; j < n - i - 1; j++) {
-				if (queue[j + 1][0] < queue[j][0]) {
-					int[] temp = queue[j];
-					queue[j] = queue[j + 1];
-					queue[j + 1] = temp;
-				}
+		Arrays.sort(queue, new Comparator<Cow>() {
+			@Override
+			public int compare(Cow c1, Cow c2) {
+				return c1.a - c2.a;
 			}
-		}
+		});
 
 		int time = 0;
 		for (int i = 0; i < n; i++) {
-			time = Math.max(time, queue[i][0]) + queue[i][1];
+			time = Math.max(time, queue[i].a) + queue[i].b;
 		}
 
 		pw.println(time);
