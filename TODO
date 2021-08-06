@@ -1,0 +1,17 @@
+Solutions To Improve Later:
+prob1_bronze_jan21
+hoofball
+lifeguards
+measurement
+mixmilk
+revegetate
+triangles
+tttt
+
+General Improvements to Make:
+use Math.max() and Math.min() when finding largest and smallest seen values
+use Comparators instead of bubble sorts
+use more helper methods where applicable
+write neater comments
+reduce unnecessarily long variable names
+use pw.print() instead of pw.println() where possible
