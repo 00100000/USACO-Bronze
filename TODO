@@ -9,7 +9,6 @@ triangles
 tttt
 
 General Improvements to Make:
-use Math.max() and Math.min() when finding largest and smallest seen values
 use Comparators instead of bubble sorts
 use more helper methods where applicable
 write neater comments

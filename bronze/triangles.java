@@ -56,7 +56,7 @@ class triangles {
 						continue;
 					}
 					area = Math.abs(mid[0] - x) * Math.abs(mid[1] - y);
-					if (area > max) max = area;
+					Math.max(max, area);
 				}
 			}
 		}

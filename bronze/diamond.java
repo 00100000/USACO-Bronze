@@ -28,7 +28,7 @@ class diamond {
 			// always contain at least one diamond
 			int count = 1;
 			for (int j = i + 1; j < n; j++) if (Math.abs(diamonds[i] - diamonds[j]) <= k) count++;
-			if (count > max) max = count;
+			max = Math.max(max, count);
 		}
 
 		pw.print(max);

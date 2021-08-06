@@ -29,7 +29,7 @@ class cbarn {
 				distance += r[j] * roomCnt;
 				roomCnt++;
 			}
-			if (min > distance) min = distance;
+			min = Math.min(min, distance);
 		}
 
 		pw.print(min);

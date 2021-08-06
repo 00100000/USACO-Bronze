@@ -59,7 +59,7 @@ class angry {
 					break;
 				}
 			}
-			if (max < exploded) max = exploded;
+			max = Math.max(max, exploded);
 		}
 
 		pw.print(max);

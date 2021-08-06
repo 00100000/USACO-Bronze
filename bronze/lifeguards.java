@@ -49,7 +49,7 @@ class lifeguards {
 			}
 			// add final element
 			if (i != n - 1) time += guards[n - 1][1] - guards[n - 1][0];
-			if (time > max) max = time;
+			max = Math.max(max, time);
 			// reset guard
 			guards[i] = temp;
 		}

@@ -39,7 +39,7 @@ class guess {
 						}
 					}
 				}
-				if (max < shared) max = shared;
+				max = Math.max(max, shared);
 			}
 		}
 		// + 1 for the confirmation guess
