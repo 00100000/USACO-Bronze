@@ -31,7 +31,7 @@ class diamond {
 			if (count > max) max = count;
 		}
 
-		pw.println(max);
+		pw.print(max);
 		br.close();
 		pw.close();
 	}

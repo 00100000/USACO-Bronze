@@ -30,7 +30,8 @@ class shell {
 		for (int i = 0; i < 3; i++) {
 			if (picked[i] > max) max = picked[i];
 		}
-		pw.println(max);
+
+		pw.print(max);
 		br.close();
 		pw.close();
 	}

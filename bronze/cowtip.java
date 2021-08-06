@@ -34,7 +34,7 @@ class cowtip {
 			}
 		}
 
-		pw.println(flips);
+		pw.print(flips);
 		br.close();
 		pw.close();
 	}

@@ -42,7 +42,7 @@ class lostcow {
 			check *= -2;
 		}
 
-		pw.println(steps);
+		pw.print(steps);
 		br.close();
 		pw.close();
 	}

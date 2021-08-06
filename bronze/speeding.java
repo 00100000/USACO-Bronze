@@ -46,7 +46,7 @@ class speeding {
 			if (mArr[i] - nArr[i] > worstInfraction) worstInfraction = mArr[i] - nArr[i];
 		}
 
-		pw.println(worstInfraction);
+		pw.print(worstInfraction);
 		pw.close();
 		br.close();
 	}

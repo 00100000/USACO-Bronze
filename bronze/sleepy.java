@@ -24,7 +24,7 @@ class sleepy {
 			a = b;
 		}
 
-		pw.println(unordered);
+		pw.print(unordered);
 		br.close();
 		pw.close();
 	}

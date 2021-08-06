@@ -54,7 +54,7 @@ class hoofball {
 			}
 		}
 
-		pw.println(balls);
+		pw.print(balls);
 		br.close();
 		pw.close();
 	}

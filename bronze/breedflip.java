@@ -25,7 +25,7 @@ class breedflip {
 			lastOpposite = thisOpposite;
 		}
 
-		pw.println(flips);
+		pw.print(flips);
 		br.close();
 		pw.close();
 	}

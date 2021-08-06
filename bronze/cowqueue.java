@@ -37,7 +37,7 @@ class cowqueue {
 			time = Math.max(time, queue[i].a) + queue[i].b;
 		}
 
-		pw.println(time);
+		pw.print(time);
 		br.close();
 		pw.close();
 	}

@@ -17,17 +17,16 @@ class pails {
 		int m = Integer.parseInt(st.nextToken());
 
 		// check all possible adding combinations
-		int total = 0;
 		int maxTotal = 0;
 		for (int i = 0; i*y <= m; i++) {
+			int total = 0;
 			total += i*y;
 			// fill rest of total with x
 			while (total + x <= m) total += x;
-			if (total > maxTotal) maxTotal = total;
-			total = 0;
+			maxTotal = Math.max(maxTotal, total);
 		}
 
-		pw.println(maxTotal);
+		pw.print(maxTotal);
 		br.close();
 		pw.close();
 	}

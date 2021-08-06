@@ -32,7 +32,7 @@ class whereami {
 			}
 			// if each i letter is unique
 			if (isUnique) {
-				pw.println(i);
+				pw.print(i);
 				break;
 			}
 		}

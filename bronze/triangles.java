@@ -61,7 +61,7 @@ class triangles {
 			}
 		}
 
-		pw.println(max);
+		pw.print(max);
 		br.close();
 		pw.close();
 	}

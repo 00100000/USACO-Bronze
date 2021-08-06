@@ -34,7 +34,7 @@ class cownomics {
 			if (isPossibleGene) possible++;
 		}
 
-		pw.println(possible);
+		pw.print(possible);
 		br.close();
 		pw.close();
 	}

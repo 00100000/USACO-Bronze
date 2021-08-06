@@ -25,7 +25,7 @@ class outofplace {
 			if (cows[i] != sorted[i]) swaps++;
 		}
 
-		pw.println(Math.max(swaps - 1, 0));
+		pw.print(Math.max(swaps - 1, 0));
 		br.close();
 		pw.close();
 	}

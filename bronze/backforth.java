@@ -58,7 +58,7 @@ class backforth {
 			vol += aBuckets[i];
 		}
 
-		pw.println(totals);
+		pw.print(totals);
 		br.close();
 		pw.close();
 	}

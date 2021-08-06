@@ -62,7 +62,7 @@ class angry {
 			if (max < exploded) max = exploded;
 		}
 
-		pw.println(max);
+		pw.print(max);
 		br.close();
 		pw.close();
 	}

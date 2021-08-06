@@ -51,7 +51,7 @@ class gymnastics {
 			}
 		}
 
-		pw.println(pairs.size());
+		pw.print(pairs.size());
 		br.close();
 		pw.close();
 	}

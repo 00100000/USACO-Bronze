@@ -14,4 +14,3 @@ use Comparators instead of bubble sorts
 use more helper methods where applicable
 write neater comments
 reduce unnecessarily long variable names
-use pw.print() instead of pw.println() where possible

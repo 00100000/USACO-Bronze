@@ -61,7 +61,7 @@ class measurement {
 			display = newDisplay;
 		}
 
-		pw.println(changes);
+		pw.print(changes);
 		br.close();
 		pw.close();
 	}

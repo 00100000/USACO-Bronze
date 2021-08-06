@@ -47,7 +47,7 @@ class mowing {
 			}
 		}
 
-		pw.println(overlaps == 0 ? -1 : min);
+		pw.print(overlaps == 0 ? -1 : min);
 		br.close();
 		pw.close();
 	}

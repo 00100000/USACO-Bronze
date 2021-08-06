@@ -43,7 +43,7 @@ class guess {
 			}
 		}
 		// + 1 for the confirmation guess
-		pw.println(max + 1);
+		pw.print(max + 1);
 		br.close();
 		pw.close();
 	}

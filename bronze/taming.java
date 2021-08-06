@@ -32,7 +32,7 @@ class taming {
 				negCnt++;
 			} else {
 				if (log[i] < possibleNextMin && log[i] > negCnt || log[i] > possibleNextMax) {
-					pw.println("-1");
+					pw.print("-1");
 					br.close();
 					pw.close();
 					return;
@@ -64,7 +64,7 @@ class taming {
 		}
 		max += min;
 
-		pw.println(min + " " + max);
+		pw.print(min + " " + max);
 		br.close();
 		pw.close();
 	}

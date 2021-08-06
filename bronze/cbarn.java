@@ -32,7 +32,7 @@ class cbarn {
 			if (min > distance) min = distance;
 		}
 
-		pw.println(min);
+		pw.print(min);
 		br.close();
 		pw.close();
 	}

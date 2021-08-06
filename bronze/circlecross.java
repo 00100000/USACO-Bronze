@@ -32,7 +32,7 @@ class circlecross {
 			}
 		}
 
-		pw.println(crosses);
+		pw.print(crosses);
 		br.close();
 		pw.close();
 	}

@@ -54,7 +54,7 @@ class art {
 			if (!notFirst[i]) cnt++;
 		}
 
-		pw.println(cnt);
+		pw.print(cnt);
 		br.close();
 		pw.close();
 	}
