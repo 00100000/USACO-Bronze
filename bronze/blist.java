@@ -27,7 +27,7 @@ class blist {
 		for (int i = 0; i < 1000; i++) {
 			int needed = 0;
 			for (int j = 0; j < n; j++) {
-				if (i > s[j] && i < t[j]) {
+				if (i >= s[j] && i <= t[j]) {
 					needed += b[j];
 				}
 			}
