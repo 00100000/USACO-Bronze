@@ -14,45 +14,30 @@ class race {
 
 		int k = Integer.parseInt(st.nextToken());
 		int n = Integer.parseInt(st.nextToken());
-		// I tried to make my solution understandable, but it's a bit crazy, so sorry if you can't
-		// understand it well
+
 		for (int i = 0; i < n; i++) {
 			int x = Integer.parseInt(br.readLine());
-			// add total dist and speed if bessie kept accelerating until she reached speed x
-			int t = x;
-			int dist = (x * (x + 1)) / 2;
+			int t = 0;
+			int dist = 0;
 			int speed = 0;
-			// if bessie reaches the finish line before or while she reaches speed x
-			if (dist >= k) {
-				t = 0;
-				dist = 0;
-				while (dist < k) {
-					t++;
-					speed++;
-					dist += speed;
-				}
-			} else {
-				// add last step of race when speed descreases back to x
-				dist += x;
+			// bessie accelerates until she reaches speed x
+			t = 0;
+			dist = 0;
+			speed = 0;
+			while (dist < k && speed <= x) {
 				t++;
-				// add speed to both the start and end of the race to find the max speed bessie
-				// can peak during the race
-				// leave speed + 1 * 2 room to find if the pyramid has a double peak or single
-				// peak
-				speed = x;
-				while (dist < k - (speed + 1) * 2) {
-					speed++;
-					dist += speed * 2;
-					t += 2;
-				}
-				// if pyramid has single peak
-				if (dist + speed + 1 >= k || dist + speed >= k) {
-					t++;
-				// double peak
-				} else {
-					t+= 2;
-				}
+				speed++;
+				dist += speed;
 			}
+			// if bessie travels above the max speed, add the speeds twice, to simulate when bessie
+			// passes that speed in her acceleration and deceleration
+			while (dist < k) {
+				dist += speed * 2;
+				t += 2;
+				speed++;
+			}
+			// if the max speed only needs to be traveled once
+			if (dist - speed + 1 >= k) t--;
 			pw.println(t);
 		}
 
