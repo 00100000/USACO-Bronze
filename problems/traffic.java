@@ -42,6 +42,7 @@ class traffic {
 				b -= log[i].a;
 			}
 		}
+		if (a < 0) a = 0;
 		pw.println(a + " " + b);
 		// calculate forwards
 		a = 0; b = 1000;
@@ -57,6 +58,7 @@ class traffic {
 				b += log[i].b;
 			}
 		}
+		if (a < 0) a = 0;
 		pw.println(a + " " + b);
 
 		br.close();

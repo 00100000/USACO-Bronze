@@ -24,7 +24,7 @@ class race {
 			t = 0;
 			dist = 0;
 			speed = 0;
-			while (dist < k && speed <= x) {
+			while (dist < k && speed < x - 1) {
 				t++;
 				speed++;
 				dist += speed;
@@ -32,12 +32,12 @@ class race {
 			// if bessie travels above the max speed, add the speeds twice, to simulate when bessie
 			// passes that speed in her acceleration and deceleration
 			while (dist < k) {
-				dist += speed * 2;
-				t += 2;
+				t+= 2;
 				speed++;
+				dist += speed * 2;
 			}
-			// if the max speed only needs to be traveled once
-			if (dist - speed + 1 >= k) t--;
+			// if target is overshot
+			if (dist - speed >= k) t--;
 			pw.println(t);
 		}
 
