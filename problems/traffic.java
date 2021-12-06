@@ -10,7 +10,7 @@ class traffic {
 	static class Log {
 		int dir, a, b;
 	}
-	public static void main(String[]args) throws IOException {
+	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new FileReader("traffic.in"));
 		PrintWriter pw = new PrintWriter(new BufferedWriter(new FileWriter("traffic.out")));
 

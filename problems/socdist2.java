@@ -13,7 +13,7 @@ class socdist2 {
 		boolean s;
 		int x;
 	}
-	public static void main(String[]args) throws IOException {
+	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new FileReader("socdist2.in"));
 		PrintWriter pw = new PrintWriter(new BufferedWriter(new FileWriter("socdist2.out")));
 

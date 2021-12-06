@@ -24,10 +24,10 @@ class billboard {
 			return xIntersect * yIntersect;
 		}
 	}
-	public static void main(String[]args) throws IOException {
+	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new FileReader("billboard.in"));
 		PrintWriter pw = new PrintWriter(new BufferedWriter(new FileWriter("billboard.out")));
-		
+
 		rect b1 = new rect(br.readLine());
 		rect b2 = new rect(br.readLine());
 		rect t = new rect(br.readLine());

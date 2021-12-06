@@ -6,7 +6,7 @@ import java.io.IOException;
 import java.io.PrintWriter;
 
 class whereami {
-	public static void main(String[]args) throws IOException {
+	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new FileReader("whereami.in"));
 		PrintWriter pw = new PrintWriter(new BufferedWriter(new FileWriter("whereami.out")));
 

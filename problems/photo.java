@@ -7,7 +7,7 @@ import java.io.PrintWriter;
 import java.util.StringTokenizer;
 
 class photo {
-	public static  void main(String[]args) throws IOException {
+	public static  void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new FileReader("photo.in"));
 		PrintWriter pw = new PrintWriter(new BufferedWriter(new FileWriter("photo.out")));
 

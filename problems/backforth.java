@@ -7,7 +7,7 @@ import java.io.PrintWriter;
 import java.util.StringTokenizer;
 
 class backforth {
-	public static void main(String[]args) throws IOException {
+	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new FileReader("backforth.in"));
 		PrintWriter pw = new PrintWriter(new BufferedWriter(new FileWriter("backforth.out")));
 

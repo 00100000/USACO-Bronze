@@ -8,7 +8,7 @@ import java.util.StringTokenizer;
 
 class prob2_bronze_feb21 {
 	static boolean[][] pasture = new boolean[1001][1001];
-	public static void main(String[]args) throws IOException {
+	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		PrintWriter pw = new PrintWriter(new BufferedWriter(new OutputStreamWriter(System.out)));
 

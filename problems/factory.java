@@ -8,7 +8,7 @@ import java.util.StringTokenizer;
 
 class factory {
 	static int n;
-	public static void main(String[]args) throws IOException {
+	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new FileReader("factory.in"));
 		PrintWriter pw = new PrintWriter(new BufferedWriter(new FileWriter("factory.out")));
 

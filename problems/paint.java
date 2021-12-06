@@ -7,7 +7,7 @@ import java.io.PrintWriter;
 import java.util.StringTokenizer;
 
 class paint {
-	public static void main(String[]args) throws IOException {
+	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new FileReader("paint.in"));
 		PrintWriter pw = new PrintWriter(new BufferedWriter(new FileWriter("paint.out")));
 		StringTokenizer st = new StringTokenizer(br.readLine());

@@ -8,7 +8,7 @@ import java.util.ArrayList;
 import java.util.StringTokenizer;
 
 class mowing {
-	public static void main(String[]args) throws IOException {
+	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new FileReader("mowing.in"));
 		PrintWriter pw = new PrintWriter(new BufferedWriter(new FileWriter("mowing.out")));
 

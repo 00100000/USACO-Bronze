@@ -12,7 +12,7 @@ class tracing {
 	static class Handshake {
 		int t, x, y;
 	}
-	public static void main(String[]args) throws IOException {
+	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new FileReader("tracing.in"));
 		PrintWriter pw = new PrintWriter(new BufferedWriter(new FileWriter("tracing.out")));
 		StringTokenizer st = new StringTokenizer(br.readLine());

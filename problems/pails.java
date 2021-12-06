@@ -7,7 +7,7 @@ import java.io.PrintWriter;
 import java.util.StringTokenizer;
 
 class pails {
-	public static void main(String[]args) throws IOException {
+	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new FileReader("pails.in"));
 		PrintWriter pw = new PrintWriter(new BufferedWriter(new FileWriter("pails.out")));
 		StringTokenizer st = new StringTokenizer(br.readLine());

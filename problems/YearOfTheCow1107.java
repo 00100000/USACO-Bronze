@@ -16,7 +16,7 @@ class YearOfTheCow1107 {
 		// int years a is older than b (can be negative)
 		int dif;
 	}
-	public static void main(String[]args) throws IOException {
+	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		PrintWriter pw = new PrintWriter(new BufferedWriter(new OutputStreamWriter(System.out)));
 		mentioned.put("Bessie", "Ox");

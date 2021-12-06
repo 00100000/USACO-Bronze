@@ -8,7 +8,7 @@ import java.util.Arrays;
 import java.util.StringTokenizer;
 
 class DoYouKnowYourABCs1059 {
-	public static void main(String[]args) throws IOException {
+	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		PrintWriter pw = new PrintWriter(new BufferedWriter(new OutputStreamWriter(System.out)));
 		StringTokenizer st = new StringTokenizer(br.readLine());

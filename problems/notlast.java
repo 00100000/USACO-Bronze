@@ -8,7 +8,7 @@ import java.util.StringTokenizer;
 
 class notlast {
 	static String[] cow = {"Annabelle", "Bessie", "Daisy", "Elsie", "Gertie", "Henrietta", "Maggie"};
-	public static void main(String[]args) throws IOException {
+	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new FileReader("notlast.in"));
 		PrintWriter pw = new PrintWriter(new BufferedWriter(new FileWriter("notlast.out")));
 

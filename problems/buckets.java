@@ -6,7 +6,7 @@ import java.io.IOException;
 import java.io.PrintWriter;
 
 class buckets {
-	public static void main(String[]args) throws IOException {
+	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new FileReader("buckets.in"));
 		PrintWriter pw = new PrintWriter(new BufferedWriter(new FileWriter("buckets.out")));
 

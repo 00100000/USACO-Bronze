@@ -9,7 +9,7 @@ import java.util.StringTokenizer;
 
 class guess {
 	@SuppressWarnings("unchecked")
-	public static void main(String[]args) throws IOException {
+	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new FileReader("guess.in"));
 		PrintWriter pw = new PrintWriter(new BufferedWriter(new FileWriter("guess.out")));
 

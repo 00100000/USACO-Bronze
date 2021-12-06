@@ -8,7 +8,7 @@ import java.util.Arrays;
 import java.util.StringTokenizer;
 
 class diamond {
-	public static void main(String[]args) throws IOException {
+	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new FileReader("diamond.in"));
 		PrintWriter pw = new PrintWriter(new BufferedWriter(new FileWriter("diamond.out")));
 		StringTokenizer st = new StringTokenizer(br.readLine());

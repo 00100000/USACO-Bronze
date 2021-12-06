@@ -10,7 +10,7 @@ class badmilk {
 	static class Event {
 		int p, m = -1, t;
 	}
-	public static void main(String[]args) throws IOException {
+	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new FileReader("badmilk.in"));
 		PrintWriter pw = new PrintWriter(new BufferedWriter(new FileWriter("badmilk.out")));
 		StringTokenizer st = new StringTokenizer(br.readLine());

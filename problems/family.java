@@ -10,7 +10,7 @@ import java.util.StringTokenizer;
 class family {
 	static ArrayList<String> mothers = new ArrayList<String>(0);
 	static ArrayList<String> daughters = new ArrayList<String>(0);
-	public static void main(String[]args) throws IOException {
+	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new FileReader("family.in"));
 		PrintWriter pw = new PrintWriter(new BufferedWriter(new FileWriter("family.out")));
 		StringTokenizer st = new StringTokenizer(br.readLine());

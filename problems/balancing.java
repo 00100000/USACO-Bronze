@@ -10,7 +10,7 @@ class balancing {
 	static class Cow {
 		int x, y;
 	}
-	public static void main(String[]args) throws IOException {
+	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new FileReader("balancing.in"));
 		PrintWriter pw = new PrintWriter(new BufferedWriter(new FileWriter("balancing.out")));
 		StringTokenizer st = new StringTokenizer(br.readLine());
