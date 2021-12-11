@@ -45,14 +45,11 @@ class badmilk {
 		for (int i = 1; i <= m; i++) {
 			// check if all the sick people drank milk i before getting sick
 			boolean isValid = true;
-			System.out.println("Milk: " + i);
 			for (int j = 0; j < s; j++) {
-				System.out.println(sick[j].p + " " + sick[j].t);
 				boolean madeJSick = false;
 				for (int k = 0; k < d; k++) {
 					// if sick person j drank milk i before getting sick
 					if (drink[k].m == i && sick[j].p == drink[k].p && sick[j].t > drink[k].t) {
-						System.out.println(drink[k].p + " " + drink[k].m + " " + drink[k].t);
 						madeJSick = true;
 						break;
 					}
