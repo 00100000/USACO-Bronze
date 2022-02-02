@@ -6,7 +6,7 @@ import java.io.OutputStreamWriter;
 import java.io.PrintWriter;
 import java.util.StringTokenizer;
 
-class prob2_bronze_feb21 {
+class ComfortableCows1108 {
 	static boolean[][] pasture = new boolean[1001][1001];
 	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));

@@ -1,5 +1,3 @@
-// This problem took a piece of my sanity and my sleep schedule.
-
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.IOException;
@@ -10,7 +8,7 @@ import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.StringTokenizer;
 
-class prob3_bronze_dec20 {
+class StuckInARut1061 {
 	static class Cow {
 		int order;
 		int x, y;
