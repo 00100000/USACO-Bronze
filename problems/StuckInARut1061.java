@@ -8,13 +8,13 @@ import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.StringTokenizer;
 
-class StuckInARut1061 {
-	static class Cow {
+public class StuckInARut1061 {
+	static public class Cow {
 		int order;
 		int x, y;
 		int traveled = -1;
 	}
-	static class Meet {
+	static public class Meet {
 		int t, stop;
 		int e, n;
 		int x, y;

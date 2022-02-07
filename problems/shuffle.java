@@ -6,7 +6,7 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.StringTokenizer;
 
-class shuffle {
+public class shuffle {
 	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new FileReader("shuffle.in"));
 		PrintWriter pw = new PrintWriter(new BufferedWriter(new FileWriter("shuffle.out")));

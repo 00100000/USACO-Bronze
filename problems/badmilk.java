@@ -6,8 +6,8 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.StringTokenizer;
 
-class badmilk {
-	static class Event {
+public class badmilk {
+	static public class Event {
 		int p, m = -1, t;
 	}
 	public static void main(String[] args) throws IOException {

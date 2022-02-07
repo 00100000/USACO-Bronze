@@ -6,7 +6,7 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.StringTokenizer;
 
-class mixmilk {
+public class mixmilk {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new FileReader("mixmilk.in"));
         PrintWriter pw = new PrintWriter(new BufferedWriter(new FileWriter("mixmilk.out")));

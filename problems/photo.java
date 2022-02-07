@@ -6,7 +6,7 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.StringTokenizer;
 
-class photo {
+public class photo {
 	public static  void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new FileReader("photo.in"));
 		PrintWriter pw = new PrintWriter(new BufferedWriter(new FileWriter("photo.out")));

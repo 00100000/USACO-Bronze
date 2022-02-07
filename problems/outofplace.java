@@ -6,7 +6,7 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.Arrays;
 
-class outofplace {
+public class outofplace {
 	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new FileReader("outofplace.in"));
 		PrintWriter pw = new PrintWriter(new BufferedWriter(new FileWriter("outofplace.out")));

@@ -7,7 +7,7 @@ import java.io.PrintWriter;
 import java.util.Arrays;
 import java.util.StringTokenizer;
 
-class hoofball {
+public class hoofball {
 	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new FileReader("hoofball.in"));
 		PrintWriter pw = new PrintWriter(new BufferedWriter(new FileWriter("hoofball.out")));

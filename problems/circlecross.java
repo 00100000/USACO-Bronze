@@ -5,7 +5,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
 
-class circlecross {
+public class circlecross {
 	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new FileReader("circlecross.in"));
 		PrintWriter pw = new PrintWriter(new BufferedWriter(new FileWriter("circlecross.out")));

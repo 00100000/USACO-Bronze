@@ -6,7 +6,7 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.StringTokenizer;
 
-class factory {
+public class factory {
 	static int n;
 	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new FileReader("factory.in"));

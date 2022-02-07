@@ -7,11 +7,11 @@ import java.io.PrintWriter;
 import java.util.HashMap;
 import java.util.StringTokenizer;
 
-class YearOfTheCow1107 {
+public class YearOfTheCow1107 {
 	static String[] cycle = { "Ox", "Tiger", "Rabbit", "Dragon", "Snake", "Horse", "Goat", "Monkey", "Rooster", "Dog", "Pig", "Rat" };
 	static HashMap<String, String> mentioned = new HashMap<String, String>(0);
 
-	static class Relation {
+	static public class Relation {
 		String a, b;
 		// int years a is older than b (can be negative)
 		int dif;

@@ -8,8 +8,8 @@ import java.util.Arrays;
 import java.util.Comparator;
 import java.util.StringTokenizer;
 
-class tracing {
-	static class Handshake {
+public class tracing {
+	static public class Handshake {
 		int t, x, y;
 	}
 	public static void main(String[] args) throws IOException {

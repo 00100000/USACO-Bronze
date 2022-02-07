@@ -6,7 +6,7 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.StringTokenizer;
 
-class notlast {
+public class notlast {
 	static String[] cow = {"Annabelle", "Bessie", "Daisy", "Elsie", "Gertie", "Henrietta", "Maggie"};
 	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new FileReader("notlast.in"));

@@ -5,7 +5,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
 
-class art {
+public class art {
 	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new FileReader("art.in"));
 		PrintWriter pw = new PrintWriter(new BufferedWriter(new FileWriter("art.out")));

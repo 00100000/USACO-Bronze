@@ -5,7 +5,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
 
-class cowtip {
+public class cowtip {
 	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new FileReader("cowtip.in"));
 		PrintWriter pw = new PrintWriter(new BufferedWriter(new FileWriter("cowtip.out")));

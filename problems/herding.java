@@ -7,7 +7,7 @@ import java.io.PrintWriter;
 import java.util.Arrays;
 import java.util.StringTokenizer;
 
-class herding {
+public class herding {
 	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new FileReader("herding.in"));
 		PrintWriter pw = new PrintWriter(new BufferedWriter(new FileWriter("herding.out")));

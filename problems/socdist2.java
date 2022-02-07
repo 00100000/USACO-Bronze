@@ -8,8 +8,8 @@ import java.util.Arrays;
 import java.util.Comparator;
 import java.util.StringTokenizer;
 
-class socdist2 {
-	static class Cow {
+public class socdist2 {
+	static public class Cow {
 		boolean s;
 		int x;
 	}

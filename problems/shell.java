@@ -6,7 +6,7 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.StringTokenizer;
 
-class shell {
+public class shell {
 	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new FileReader("shell.in"));
 		PrintWriter pw = new PrintWriter(new BufferedWriter(new FileWriter("shell.out")));

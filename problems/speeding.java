@@ -6,7 +6,7 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.StringTokenizer;
 
-class speeding {
+public class speeding {
 	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new FileReader("speeding.in"));
 		StringTokenizer st = new StringTokenizer(br.readLine());

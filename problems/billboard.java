@@ -6,8 +6,8 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.StringTokenizer;
 
-class billboard {
-	static class rect {
+public class billboard {
+	static public class rect {
 		int x1, y1, x2, y2;
 		int area;
 		public rect(String s) {

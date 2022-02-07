@@ -6,7 +6,7 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.StringTokenizer;
 
-class lostcow {
+public class lostcow {
 	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new FileReader("lostcow.in"));
 		PrintWriter pw = new PrintWriter(new BufferedWriter(new FileWriter("lostcow.out")));

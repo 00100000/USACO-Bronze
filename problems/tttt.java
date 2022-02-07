@@ -7,7 +7,7 @@ import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.StringTokenizer;
 
-class tttt {
+public class tttt {
 	private static String soloWins = "";
 	private static ArrayList<String> duoWins = new ArrayList<String>();
 

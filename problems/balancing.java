@@ -6,8 +6,8 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.StringTokenizer;
 
-class balancing {
-	static class Cow {
+public class balancing {
+	static public class Cow {
 		int x, y;
 	}
 	public static void main(String[] args) throws IOException {

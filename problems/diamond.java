@@ -7,7 +7,7 @@ import java.io.PrintWriter;
 import java.util.Arrays;
 import java.util.StringTokenizer;
 
-class diamond {
+public class diamond {
 	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new FileReader("diamond.in"));
 		PrintWriter pw = new PrintWriter(new BufferedWriter(new FileWriter("diamond.out")));

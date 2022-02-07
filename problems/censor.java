@@ -6,7 +6,7 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.Arrays;
 
-class censor {
+public class censor {
 	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new FileReader("censor.in"));
 		PrintWriter pw = new PrintWriter(new BufferedWriter(new FileWriter("censor.out")));

@@ -6,8 +6,8 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.StringTokenizer;
 
-class traffic {
-	static class Log {
+public class traffic {
+	static public class Log {
 		int dir, a, b;
 	}
 	public static void main(String[] args) throws IOException {

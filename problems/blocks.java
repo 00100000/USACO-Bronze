@@ -6,7 +6,7 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.StringTokenizer;
 
-class blocks {
+public class blocks {
 	private static int[] arr = new int[26];
 
 	public static void main(String[] args) throws IOException {

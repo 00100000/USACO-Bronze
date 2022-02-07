@@ -6,7 +6,7 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.StringTokenizer;
 
-class measurement {
+public class measurement {
 	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new FileReader("measurement.in"));
 		PrintWriter pw = new PrintWriter(new BufferedWriter(new FileWriter("measurement.out")));

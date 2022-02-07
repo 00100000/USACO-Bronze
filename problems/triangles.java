@@ -6,7 +6,7 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.StringTokenizer;
 
-class triangles {
+public class triangles {
 	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new FileReader("triangles.in"));
 		PrintWriter pw = new PrintWriter(new BufferedWriter(new FileWriter("triangles.out")));

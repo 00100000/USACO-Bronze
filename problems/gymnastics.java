@@ -7,7 +7,7 @@ import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.StringTokenizer;
 
-class gymnastics {
+public class gymnastics {
 	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new FileReader("gymnastics.in"));
 		StringTokenizer st = new StringTokenizer(br.readLine());

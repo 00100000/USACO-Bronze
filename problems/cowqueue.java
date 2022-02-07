@@ -8,8 +8,8 @@ import java.util.Arrays;
 import java.util.Comparator;
 import java.util.StringTokenizer;
 
-class cowqueue {
-	static class Cow {
+public class cowqueue {
+	static public class Cow {
 		int a, b;
 	}
 	public static void main(String[] args) throws IOException {
