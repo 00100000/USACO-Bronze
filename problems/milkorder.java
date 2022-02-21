@@ -1,12 +1,10 @@
-// does not work for test cases 7 and 8 (empty output file)
-
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.StringTokenizer;
 
 public class milkorder {
@@ -31,44 +29,35 @@ public class milkorder {
 			int cow = Integer.parseInt(st.nextToken()), position = Integer.parseInt(st.nextToken()) - 1;
 			order[position] = cow;
 		}
-		// all cows in the hierarchy that aren't already in a fixed position or 1
-		ArrayList<Integer> nonKHierarchy = new ArrayList<Integer>(0);
+		// track if each cow in hierarchy is in order
+		boolean[] inOrder = new boolean[m];
 		for (int i = 0; i < m; i++) {
-			boolean orderContains = false;
 			for (int j = 0; j < n; j++) {
 				if (hierarchy[i] == order[j] || hierarchy[i] == 1) {
-					orderContains = true;
+					inOrder[i] = true;
 					break;
 				}
 			}
-			if (!orderContains) nonKHierarchy.add(hierarchy[i]);
 		}
-
+		// try adding cow 1 as early as possible in order
 		for (int i = 0; i < n; i++) {
-			// add cow 1 to each spot in the order
 			if (order[i] == 0) {
-				// copy order to tempOrder
-				int[] tempOrder = new int[n];
-				for (int j = 0; j < n; j++) {
-					tempOrder[j] = order[j];
-				}
+				int[] tempOrder = Arrays.copyOf(order, n);
 				tempOrder[i] = 1;
-				// add rest of important cows to order
-				for (int j = 0, nonKPos = 0; j < n && nonKPos < nonKHierarchy.size(); j++) {
-					if (tempOrder[j] == 0) {
-						tempOrder[j] = nonKHierarchy.get(nonKPos);
-						nonKPos++;
+				// add hierarchy as early as possible to tempOrder
+				int l = 0;
+				for (int j = 0; j < n && l < m; j++) {
+					if (inOrder[l]) {
+						if (tempOrder[j] == hierarchy[l]) l++;
+					} else {
+						if (tempOrder[j] == 0) {
+							tempOrder[j] = hierarchy[l];
+							l++;
+						}
 					}
 				}
-				// check if this is a valid ordering
-				int cnt = 0;
-				for (int j = 0, hierarchyPos = 0; j < n && hierarchyPos < m; j++) {
-					if (tempOrder[j] == hierarchy[hierarchyPos]) {
-						cnt++;
-						hierarchyPos++;
-					}
-				}
-				if (cnt == m) {
+				// if this is a valid ordering, the entire hierarchy must have been traversed
+				if (l == m) {
 					pw.println(i + 1);
 					break;
 				}
