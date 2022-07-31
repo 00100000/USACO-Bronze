@@ -8,7 +8,7 @@ import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.StringTokenizer;
 
-public class StuckInARut1061 {
+class StuckInARut {
 	static public class Cow {
 		int order;
 		int x, y;
