@@ -7,7 +7,7 @@ import java.io.PrintWriter;
 import java.util.HashMap;
 import java.util.StringTokenizer;
 
-public class YearOfTheCow1107 {
+public class YearOfTheCow {
 	static String[] cycle = { "Ox", "Tiger", "Rabbit", "Dragon", "Snake", "Horse", "Goat", "Monkey", "Rooster", "Dog", "Pig", "Rat" };
 	static HashMap<String, String> mentioned = new HashMap<String, String>(0);
 

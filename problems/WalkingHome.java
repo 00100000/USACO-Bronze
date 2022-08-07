@@ -6,7 +6,7 @@ import java.io.OutputStreamWriter;
 import java.io.PrintWriter;
 import java.util.StringTokenizer;
 
-public class WalkingHome1157 {
+public class WalkingHome {
 	private static int n, k;
 	private static int paths;
 	private static char[][] grid;
